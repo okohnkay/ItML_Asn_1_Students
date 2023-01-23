@@ -48,13 +48,11 @@ class edaDF2:
         plt.figure(figsize=(12,6))
         sns.barplot(x=x_col, y=y_col, data=self.df)
         plt.show()
-    
      def fullEDA(self):
         out1 = widgets.Output()
         out2 = widgets.Output()
         out3 = widgets.Output()
-        out = widgets.Output()
-        
+        out4 = widgets.Output()
 
         tab = widgets.Tab(children = [out1, out2, out3])
         tab.set_title(0, 'Info')
